@@ -1,0 +1,680 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+{% block content %}
+
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('hnf3tc2v46n3');
+  </script>
+  <!-- End of Async Drift Code -->
+  <body class="home-style2">
+        
+    <!--Preloader area start here-->
+    <div id="loader" class="loader">
+        <div class="loader-container">
+            <div class='loader-icon'>
+                <img src="{% static 'assets/images/pre-logo.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Preloader area End here-->
+
+    <!--Full width header Start-->
+    <div class="full-width-header header-style2">
+        <!--Header Start-->
+        <header id="rs-header" class="rs-header">
+            <!-- Topbar Area Start -->
+            <div class="topbar-area">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-md-7">
+                            <ul class="topbar-contact">
+                                <li>
+                                    <i class="flaticon-email"></i>
+                                    <a href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <a href="tel:011 8371 899">011 8371 899</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-location"></i>
+                                    <a href="https://www.google.com/maps/@-26.1974806,28.0122546,4012m/data=!3m1!1e3">66-9th Ave, Mayfair, Joburg</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <ul class="topbar-right">
+                                <li class="login-register">
+                                    <i class="fa "></i>
+                                    <a href="/madrassah/">School Calendar</a>
+                                </li>
+                                <li class="login-register">
+                                    <i class="fa "></i>
+                                    <a href="login.html"></a>School Policy<a href="register.html"></a>
+                                </li>
+                                <li class="btn-part">
+                                    <a class="apply-btn" href="/letters/">Our News Letters</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Topbar Area End -->
+
+            <!-- Menu Start -->
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-lg-5">
+                            <div class="logo-cat-wrap">
+                                <div class="logo-part pr-90">
+                                    <a class="dark-logo" href="/">
+                                        <img src="{% static 'assets/images/logo-dark.png' %}" alt="">
+                                    </a>
+                                    <a class="light-logo" href="/">
+                                        <img src="{% static 'assets/images/logo.png' %}" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-7 text-center">
+                            <div class="rs-menu-area">
+                                <div class="main-menu pr-90">
+                                    <div class="mobile-menu">
+                                        <a class="rs-menu-toggle">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                    <nav class="rs-menu">
+                                       <ul class="nav-menu">
+                                          <li class="rs-mega-menu mega-rs menu-item-has-children current-menu-item"> <a href="/">Home</a>
+                                              <ul class="mega-menu"> 
+                                                  <li class="mega-menu-container">
+                                                      <div class="mega-menu-innner">
+                                                          <div class="single-megamenu">
+                                                              <ul class="sub-menu">
+                                                                  <li><a href="/">Mayfair Academy</a> </li>
+                                                                  <li><a href="/madrassah/">Islamic School | Madrassah</a> </li>                                                                
+                                                              </ul>
+                                                          </div>                                                                                                             
+                                                      </div>
+                                                  </li>
+                                              </ul> <!-- //.mega-menu -->
+                                          </li>
+                                           <li class="menu-item-has-children">
+                                               <a href="/about/">About</a>
+                                               <ul class="sub-menu">
+                                                   <li><a href="/about/">About Us</a> </li>
+                                                   <li><a href="/family/">Mayfair Academy Family</a> </li>
+                                               </ul>
+                                           </li>
+                                           <li class="menu-item-has-children">
+                                               <a href="/admission/">Admission</a>
+                                               <ul class="sub-menu">
+                                                   <li><a href="/admission/">Admissions Procedures</a> </li>
+                                                   <li><a href="/admission/">Fees Structure & Uniforms</a> </li>
+                                                   </li>                                                  
+                                               </ul>
+                                           </li>
+
+                                           <li class="menu-item-has-children">
+                                               <a href="/blog/">Updates</a>
+                                               <ul class="sub-menu">
+                                                   <li class="menu-item-has-children right"><a href="/project_list/">Events and Projects</a></li>
+                                                   <li class="menu-item-has-children right"><a href="/blog/">School News and Updates</a></li>                                                                                                  
+                                               </ul>
+                                           </li>
+
+                                           <li class="menu-item-has-children">
+                                               <a href="/library/">Library</a>
+                                               <ul class="sub-menu">
+                                                   <li><a href="/library/">Online Library</a></li>                                                                                        
+                                               </ul>
+                                           </li>
+
+                                           <li class="menu-item-has-children">
+                                               <a href="/gallery/">Gallery</a>
+                                               <ul class="sub-menu">
+                                                  <li><a href="/gallery/">School Gallery</a> </li>                                                                                                 
+                                               </ul>
+                                           </li>                                         
+                                       </ul> <!-- //.nav-menu -->
+                                    </nav> 
+                                </div> <!-- //.main-menu -->
+                     
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+        </header>
+        <!--Header End-->
+            </div>
+            <!--Full width header End-->
+
+            <!-- Slider Section Start -->
+            <div class="rs-slider main-home">
+                <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
+                {% for item in slider %}
+                    <div class="slider-content slide1">
+                        <div class="container">
+                            <div class="content-part">
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms"></div>
+                                <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">{{ item.text_one|safe }}</h1>
+                                <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
+                                    <a class="readon orange-btn main-home" href="#">{{ item.text_two|safe }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="slider-content slide2">
+                        <div class="container">
+                            <div class="content-part">
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms"></div>
+                                <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms"></h1>
+                                <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
+                                    <a class="readon orange-btn main-home" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-content slide3">
+                        <div class="container">
+                            <div class="content-part">
+                                <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms"></div>
+                                <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms"></h1>
+                                <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
+                                    <a class="readon orange-btn main-home" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+
+                <!-- Features Section start -->
+                <div id="rs-features" class="rs-features main-home">
+                    <div class="container">
+                       <div class="row">
+                        {% for item in application %} 
+                            <div class="col-lg-4 col-md-12 md-mb-30">
+                                <div class="features-wrap">
+                                    <div class="icon-part">
+                                       <img src="" alt="">
+                                    </div>
+                                    
+                                    <div class="content-part">
+                                        <h4 class="title">
+                                            <span class="watermark">{{ item.description }}</span>
+                                        </h4>
+                                        <p class="dese">
+                                            <a href="{{ item.application_form.url }}" download>
+                                                <button type="button" class="btn btn-warning btn-lg mr-2 btn-block"><span>Download File Here</span></button>
+                                            </a>
+                                        </p>
+                                        <p style="color:rgb(255, 255, 255)">
+                                            {{ item.content|safe }}
+                                        </p>
+                                       
+                                    </div>
+                                   
+                                </div>
+                            </div> 
+                            
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Features Section End -->
+            </div>
+            <!-- Slider Section End -->                    
+
+            <!-- Categories Section Start -->
+            <div id="rs-categories" class="rs-categories main-home pt-90 pb-100 md-pt-60 md-pb-40">
+                
+                <div class="container">
+                {% for item in heading_two %}
+                    <div class="sec-title3 text-center mb-45">
+                        <div class="sub-title"> </div>
+                        <h2 class="title black-color">{{ item.heading }}</h2>
+                        <p>{{ item.description }}</p>
+                    </div>
+                {% endfor %}
+
+                    <div class="row mb-35">
+                        {% for post in most_recent %}
+                        <div class="col-lg-4 col-md-6 mb-30">
+                            <div class="categories-items">
+                                <div class="cate-images">
+                                    <a href="{{ post.get_absolute_url }}"><img src="{{ post.image.url }}" alt=""></a>
+                                </div>
+                                <div class="contents">
+                                    <div class="img-part">
+                                        <img src="{{ post.image.url }}" alt="">
+                                    </div>
+                                    <div class="content-wrap">
+                                        <h2 class="title"><a href="{{ post.get_absolute_url }}"> {{ post.title }}</a></h2>
+                                       
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h5 class="course-qnty"> Posted By: {{ post.author }}  |  {{ post.timestamp|timesince }} ago</h5>
+                            <span class="course-qnty">{{ post.content|safe|truncatewords:40 }}</span>
+                            
+                            <p><a href="{{ post.get_absolute_url }}" class="btn btn3" style="background-color: rgb(226, 140, 3);">Read More ...</a></p> 
+
+                        </div>  
+                        {% endfor %} 
+                 
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <a class="readon orange-btn main-home" href="/blog/">Visit The School Blog </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Categories Section End -->
+         
+           <!-- Categories Section Start -->
+           <div id="rs-popular-courses" class="rs-popular-courses main-home event-bg pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                {% for item in heading_three %}
+                <div class="sec-title3 text-center mb-45">                   
+                    <h2 class="title black-color">{{ item.heading }}</h2>
+                    <div class="sub-title">{{ item.description }}</div>
+                </div>
+                {% endfor %}
+                <div class="row">
+
+                    {% for project in recent_projects %}
+                    <div class="col-lg-4 col-md-6 mb-30">
+                       <div class="courses-item">
+                            <div class="courses-grid">
+                                <div class="img-part">
+                                    <a href="{{ project.get_absolute_url }}"> {% video project.video '640x240' %}</a>
+                                </div>
+                                <div class="content-part">
+                                    <div class="info-meta">
+                                        <ul>                                                
+                                            
+                                                Posted By: {{ project.author }} | {{ project.timestamp|timesince }} ago
+                                          
+                                        </ul>
+                                    </div>
+                                    <div class="course-price">
+                                       
+                                    </div>
+                                    <h3 class="title"><a href="{{ project.get_absolute_url }}">{{ project.title}}</a></h3>
+                                    <p> {{ project.content|safe|truncatewords:20 }}</p>
+                                    <p>
+                                        <a href="{{ project.get_absolute_url }}" class="btn btn3"
+                                            style="background-color: rgb(226, 122, 3);">Read More ...</a>
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                    </div> 
+                    {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Categories Section End -->
+
+            <!-- CTA Section Start -->
+            <div class="rs-cta main-home">
+                <div class="partition-bg-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-6"></div>
+                            <div class="col-lg-6 pl-70 md-pl-15">
+                                {% for item in welcome_words %}
+                                <div class="sec-title3 mb-40">
+                                    <h2 class="title white-color mb-16">{{ item.title }}</h2>
+                                    <div class="desc white-color pr-100 md-pr-0">
+                                        {{item.content|safe}}
+                                        </div>
+                                </div>
+                                {% endfor %}
+                                <div class="btn-part">
+                                    <a class="readon orange-btn transparent" href="#">Welcome To Mayfair Academy ...!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section End --> 
+
+            <!-- Faq Section Start -->
+            <div class="rs-faq-part style1 orange-color pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 padding-0">
+                          <div class=" main-part">
+                            <div class="title mb-40 md-mb-15">
+                                <h2 class="text-part">OUR SCHOOL VALUES </h2>
+                            </div>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                LEARNING
+                            </a>
+                            <p>
+                                We value inquiry and intellectual growth of all students and staff, recognising their different learning needs,
+                                 encouraging them to be creative, engaged and lifelong learners.
+                            </p>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                DIVERSITY
+                            </a>
+                            <p>
+                                We value the acceptance and fair treatment of all people in our community. 
+                                Social justice and compassion are highly regarded and actively pursued. We encourage the development of a wide range
+                                 of curricular and co-curricular opportunities throughout the School to help facilitate individual talents and interests.
+                            </p>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                INTEGRITY
+                            </a>
+                            <p>
+                                We value strength of character, honesty and courage, guided by a strong moral code of behaviour.
+                            </p>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                EXCELLENCE
+                            </a>
+                            <p>
+                                We value the process of striving for excellence, recognising both relative and absolute standards of excellence,
+                                 and the desire to produce one’s best at all times.
+                            </p>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                SPIRITUALITY
+                            </a>
+                            <p>
+                                We value the Islam spiritual journey based in the Islamic tradition, 
+                                acknowledging World religions and the importance of the human spirit which gives personal meaning to life.
+                            </p>
+                            <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                LEADERSHIP AND A SENSE OF COMMUNITY
+                            </a>
+                            <p>We value leadership and teamwork, underpinned by a strong ethical and moral dimension and put to use in serving our community. 
+                                The notion of gratitude and ‘giving back’ is an essential feature of our leadership programmes.
+                                We value community, both within and outside the School, and the need for all citizens to be positive and productive members of society.
+                                 When our values are actively engaged, the result is a supportive environment where everyone feels that they belong.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 padding-0">
+                            <div class="img-part media-icon orange-color">
+                                <a class="popup-videos" href="https://www.youtube.com/watch?v=uDWgF6dPyAA">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- faq Section Start -->
+       
+
+            <!-- Testimonial Section Start -->
+            <div class="rs-testimonial main-home pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="sec-title3 mb-50 md-mb-30 text-center">
+                        
+                        <h2 class="title white-color">Our Mission And Vision</h2>
+                        <div class="sub-title primary">Our Motto</div>
+                    </div>
+                    <div class="rs-carousel owl-carousel" 
+                        data-loop="true" 
+                        data-items="2" 
+                        data-margin="30" 
+                        data-autoplay="true" 
+                        data-hoverpause="true" 
+                        data-autoplay-timeout="5000" 
+                        data-smart-speed="800" 
+                        data-dots="true" 
+                        data-nav="false" 
+                        data-nav-speed="false" 
+
+                        data-md-device="2" 
+                        data-md-device-nav="false" 
+                        data-md-device-dots="true" 
+                        data-center-mode="false"
+
+                        data-ipad-device2="1" 
+                        data-ipad-device-nav2="false" 
+                        data-ipad-device-dots2="true"
+
+                        data-ipad-device="2" 
+                        data-ipad-device-nav="false" 
+                        data-ipad-device-dots="true" 
+
+                        data-mobile-device="1" 
+                        data-mobile-device-nav="false" 
+                        data-mobile-device-dots="false">
+                        {% for item in mission_vision %}
+                        <div class="testi-item">
+                            
+                            <div class="author-desc"> 
+                                <h2 style="color: aliceblue;">{{ item.title }}</h2>                               
+                                <div class="desc"><img class="quote" src="{% static 'assets/images/' %}" alt="">
+                                    {{ item.content|safe }}
+                                </div>
+                                <div class="author-img">
+                                    <img src="{% static 'assets/images/' %}" alt="">
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        {% endfor %}
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Section End -->
+
+            <!-- Newsletter section start -->
+            <div class="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70">
+                <div class="container">
+                    <div class="newsletter-wrap">
+                        <div class="row y-middle">
+                            <div class="col-lg-6 col-md-12 md-mb-30">
+                               <div class="content-part">
+                                   <div class="sec-title">
+                                       <div class="title-icon md-mb-15">
+                                           <img src="{% static 'assets/images/newsletter.png' %}" alt="images">
+                                       </div>
+                                       <h2 class="title mb-0 white-color">Subscribe to Newsletter</h2>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <form class="newsletter-form">
+                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter section end -->
+     
+        </div> 
+        <!-- Main content End -->
+     
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="rs-footer home9-style main-home">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                            <div class="footer-logo mb-30">
+                                <a href="/"><img src="{% static 'assets/images/lite-logo.png' %}" alt=""></a>
+                            </div>
+                              <div class="textwidget pr-60 md-pr-15"><p class="white-color">
+                               We Are Mayfair Academy
+                                </p>
+                              </div>
+                              <ul class="footer_social">  
+                                  <li> 
+                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                                  </li>
+                                  <li> 
+                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                                  </li>
+
+                                  <li> 
+                                      <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
+                                  </li>
+                                  <li> 
+                                      <a href="# " target="_blank"><span><i class="fa fa-google-plus-square"></i></span></a> 
+                                  </li>
+                                  <li> 
+                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                                  </li>
+                                                                           
+                              </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                            <h3 class="widget-title">Address</h3>
+                            <ul class="address-widget">
+                                <li>
+                                    <i class="flaticon-location"></i>
+                                    <div class="desc">Physical Address: 90 9th Avenue, Mayfair Johannesburg 2092 P.O. Box 75, Crown Mines 2025 South Africa
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <div class="desc">
+                                       <a href="tel:+27 (0) 11 837 1899">Tell: +27 (0) 11 837 1899</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="flaticon-email"></i>
+                                    <div class="desc">
+                                        <a href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">                    
+                    <div class="row y-middle">
+                        <div class="col-lg-6 md-mb-20">
+                            <div class="copyright">
+                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mayfair Academy -  All rights reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-right md-text-left">
+                            <ul class="copy-right-menu">
+                                <li><a href="/project_list/">Event</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                                <li><a href="/gallery/">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp" class="orange-color">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="flaticon-cross"></span>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End -->
+
+        <!-- modernizr js -->
+        <script src="{% static 'assets/js/modernizr-2.8.3.min.js' %}"></script>
+        <!-- jquery latest version -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+        <!-- Menu js -->
+        <script src="{% static 'assets/js/rsmenu-main.js' %}"></script> 
+        <!-- op nav js -->
+        <script src="{% static 'assets/js/jquery.nav.js' %}"></script>
+        <!-- owl.carousel js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Slick js -->
+        <script src="{% static 'assets/js/slick.min.js' %}"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+        <!-- wow js -->
+        <script src="{% static 'assets/js/wow.min.js' %}"></script>
+        <!-- Skill bar js -->
+        <script src="{% static 'assets/js/skill.bars.jquery.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>        
+         <!-- counter top js -->
+        <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+        <!-- video js -->
+        <script src="{% static 'assets/js/jquery.mb.YTPlayer.min.js' %}"></script>
+        <!-- magnific popup js -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>      
+        <!-- plugins js -->
+        <script src="{% static 'assets/js/plugins.js' %}"></script>
+        <!-- contact form js -->
+        <script src="{% static 'assets/js/contact.form.js' %}"></script>
+        <!-- main js -->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>
+
+{% endblock content %}

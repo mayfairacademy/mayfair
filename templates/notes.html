@@ -1,0 +1,48 @@
+
+    <div class="blog_item_img">
+        {% if request.user.is_staff %}
+        <li class="button-header">
+            <a href="{% url 'library-update' id=post.id %}" class="btn btn3" style="background-color: blue;">Update</a>
+            <a href="{% url 'library-delete' id=post.id %}" class="btn btn3" style="background-color: blue;">Delete</a>
+        </li>
+        {% endif %}  
+    </div>
+
+
+    <div class="container">
+        {% for item in heading_three %}
+        <div class="sec-title3 text-center mb-45">
+
+            <h2 class="title black-color">{{ item.heading }}</h2>
+            <p>{{ item.description }}</p>
+        </div>
+        {% endfor %}
+        <div class="row">
+           
+            <div class="col-lg-4 col-md-6 mb-30">
+               
+                <div class="courses-item">
+                    {% for project in recent_projects %}
+                    <div class="courses-grid">
+                       
+                        <div class="img-part">
+                            {% video project.video '640x240' %}
+                        </div>
+                        <div class="content-part">
+                            <div class="info-meta">
+                                Posted By: {{ project.author }} | {{ project.timestamp|timesince }} ago
+                            </div>
+
+                            <h3 class="title"><a href="{{ project.get_absolute_url }}">{{ project.title }}</a></h3>
+
+                            <div class="info-meta">
+                                {{ project.content|safe|truncatewords:40 }}
+                            </div>
+                            <p>
+                                <a href="{{ project.get_absolute_url }}" class="btn btn3"
+                                    style="background-color: rgb(226, 122, 3);">Read More ...</a>
+                            </p>
+                        </div>
+                       
+                    </div>
+                    {% endfor %}

@@ -1,0 +1,114 @@
+Tell: +27 (0) 11 837 1899
+Cell: +27 (0) 78 734 6306
+
+Facebook:
+https://www.facebook.com/mayfaircademysa
+https://www.facebook.com/MadrassahOmarFarook
+
+info@mayfairacademy.co.za
+www.mayfairacademy.co.za
+
+Registration Number: 194-174- NPO
+EMIS Number: 700 401 017
+
+Physical Address: 
+90 9th Avenue, Mayfair Johannesburg 2092
+P.O. Box 75,
+Crown Mines 2025
+South Africa
+
+
+School calender
+Top achievers
+Image slider
+
+=> Create a new app
+=> Add to settings.py
+=> Create Models
+=> Import and Register in the admin.py
+=> Make migrations and migrate
+=> Import model(s) in views.py
+=> Use the models in views.py
+=> Add to the template url/view
+=>
+
+1. Settings
+2. Models
+3. Views
+4. Urls
+
+<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Apps4u.live -  All rights reserved</p>
+
+
+
+Drift code
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('simu9gnnshuf');
+</script>
+<!-- End of Async Drift Code -->
+
+
+
+
+
+
+
+
+
+
+{% for post in most_recent %} 
+
+{{ post.get_absolute_url }}
+{{ post.image.url }}
+{{post.title}} 
+Posted By: {{ post.author }}  |  {{ post.timestamp|timesince }} ago
+{{ post.content|safe|truncatewords:80 }}
+
+<a href="{{ post.get_absolute_url }}" class="btn-inline">Read More ... </a>
+
+
+ {% endfor %} 
+
+
+
+
+2300mm
+650mm
+
+========================
+HOSTING DJANGO APPS
+========================
+https://zeet.co/pricing
+https://www.pythonanywhere.com/pricing/#
+https://www.openshift.com/
+
+
+
+
+
+
+
